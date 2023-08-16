@@ -19,6 +19,7 @@ function onChangeBgColor() {
 function stopInterval() {
   if (!isActive) return;
   clearInterval(intervalId);
+  isActive = false;
 }
 
 function getRandomHexColor() {
