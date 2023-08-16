@@ -8,6 +8,7 @@ startBtn.addEventListener('click', onChangeBgColor);
 stopBtn.addEventListener('click', stopInterval);
 
 function onChangeBgColor() {
+  if (isActive) return;
   isActive = true;
   document.body.style.backgroundColor = getRandomHexColor();
   intervalId = setInterval(() => {
